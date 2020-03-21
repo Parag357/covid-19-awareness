@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -8,22 +8,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+     crossorigin="anonymous">
+     <style>
+      @import url('https://fonts.googleapis.com/css?family=Unlock&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+      </style>
     <title>COVID-19 Awareness</title>
   </head>
   <body>
 
     <!--navbar-->
-    <nav class="bg-dark">
-        <div class="nav  nav-tabs justify-content-center" id="nav-tab" role="tablist">
+    <nav class="navbar-expand-sm bg-dark">
+        <div class="collapse navbar-collapse nav  nav-tabs justify-content-center" id="nav-tab" role="tablist">
           <button class="btn-dark nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">MythBusters</button>
-          <button class="btn-dark nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+          <button class="btn-dark nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Guidelines</button>
           <button class="btn-dark nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
         </div>
       </nav>
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-<!--collapsible questions with answers-->
+<!--collapsible questions with answers for mythbusters-->
 <br>
 <div class="container">
   <div class="jumbotreon sm-12 bg dark">
@@ -38,15 +47,14 @@
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           How deadly is Coronavirus ?
         </button>
       </h2>
     </div>
-
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
-       Coronavirus has high Infectivity but low Mortality.
+       Coronavirus has <b>high Infectivity</b> but <b>low Mortality.</b>
       </div>
     </div>
   </div><br>
@@ -54,13 +62,13 @@
     <div class="card-header" id="headingTwo">
       <h2 class="mb-0">
         <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Will i ide if i catch the disease ?
+          Will i die if i catch the disease ?
         </button>
       </h2>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body">
-       No, almost 80% of people have mild symptoms and recover within two weeks. It can be treated with timely medical care.
+      <b> No</b>, almost <b>80% of people</b> have mild symptoms and <b>recover within two weeks.</b> It can be treated with timely medical care.
       </div>
     </div>
   </div><br>
@@ -74,7 +82,7 @@
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
-       Old people are twice as likely to have serious covid-19 illness than young people.
+       <b>Old people</b> are<b> twice as likely</b> to have serious covid-19 illness than young people.
       </div>
     </div>
   </div><br>
@@ -89,7 +97,7 @@
 
     <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
       <div class="card-body">
-       There is no scirentific evidence as such till date.
+       There is <b>no</b> scirentific evidence as such till date.
       </div>
     </div>
   </div><br>
@@ -97,13 +105,13 @@
     <div class="card-header" id="headingEight">
       <h2 class="mb-0">
         <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-         Will warm weather syop the outbreak of covid-19?
+         Will warm weather stop the outbreak of covid-19?
         </button>
       </h2>
     </div>
     <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
       <div class="card-body">
-       Yes, as per the excperts, heat and warm weather is likely to decrease the spread of covid-19.
+      <b>Yes</b>, as per the excperts, heat and warm weather is likely to decrease the spread of covid-19.
       </div>
     </div>
   </div><br>
@@ -117,14 +125,13 @@
     </div>
     <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
       <div class="card-body">
-       It can survive upto 8-10 hours over porous surfaces like paper, cardboard,sponge,etc and a little longer over non-porous surfaces like glass, plastic, metals, etc.
+       It can survive <b>upto 8-10 hours</b> over porous surfaces like paper, cardboard,sponge,etc and a little longer over non-porous surfaces like glass, plastic, metals, etc.
       </div>
     </div>
   </div><br>
 </div>
 
-  <div class="col-sm-6">
-    <div class="accordion" id="accordionExample">
+  <div class="col-sm-6"> 
   <div class="card">
     <div class="card-header" id="headingFour">
       <h2 class="mb-0">
@@ -135,7 +142,7 @@
     </div>
     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
       <div class="card-body">
-       No, there is no such evidence like that and from past experience from similar viruses like SARS and MERS, ikt is suggested that people do not get infected by food.
+      <b> No</b>, there is no such evidence like that and from past experience from similar viruses like SARS and MERS, it is suggested that people do not get infected by food.
       </div>
     </div>
   </div><br>
@@ -149,7 +156,7 @@
     </div>
     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
       <div class="card-body">
-       No, there is no such evidence of that.Generally the virus cant survive at high temperature. Chicken or egg is prepared through cooking at high enough temperature for this virus to die.
+      <b>No</b>, there is no evidence as such.Generally the virus cant survive at high temperature.<b> Chicken or egg is prepared through cooking at high enough temperature for this virus to die.</b>
       </div>
     </div>
   </div><br>
@@ -163,7 +170,7 @@
     </div>
     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
       <div class="card-body">
-       Any 3-layered surgical disposable mask is good enought to contain the virus. N-95 or N-99 masks are not mandatory.
+      <b>Any 3-layered surgical disposable mask</b> is good enought to contain the virus. <b>N-95 or N-99 masks are not mandatory</b>.
       </div>
     </div>
   </div><br>
@@ -177,7 +184,7 @@
     </div>
     <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
       <div class="card-body">
-       Yes, specially the wild animals get easily infected. It is recommended to wash hands before and after interaction with an animal. 
+      <b>Yes</b>, specially the wild animals get easily infected. It is recommended to wash hands before and after interaction with an animal. 
       </div>
     </div>
   </div><br>
@@ -191,7 +198,7 @@
     </div>
     <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
       <div class="card-body">
-        No. Hand dryers are not effective in killing COVID-19. 
+      <b> No</b>. Hand dryers are not effective in killing COVID-19. 
       </div>
     </div>
   </div><br>
@@ -205,19 +212,145 @@
     </div>
     <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
       <div class="card-body">
-       Yes, about 80% of the patients have recovered without needing special treatment
+      <b>Yes</b>, about <b>80% </b>of the patients have <b>recovered without needing special treatment.</b>
       </div>
     </div>
   </div><br>
 </div>
 </div>
-    </div></div></div></div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">profile</div>
+    </div></div>
+  </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <!--guidelines-->
+      <br>
+      <div class="container">
+        <div class="jumbotreon sm-12 bg dark">
+          <p><h1 align="center">Guidelines to safety from covid19 pandemic</h1></p>
+        </div>
+      </div>
+      <br>
+<div class="container2">
+  <div class="card2">
+    <div class="card-1 card2-object card2-object-hf"><a class="face front" href="#">
+      <img src="./assets/images/cough.jpg" height="400px" width="400px">
+        <div class="titleS">
+          <!--<div class="title">Rocky</div>-->
+          <div class="subtitle">Cover mouth while coughing</div>
+        </div></a><a class="face back" href="#">
+        <div class="img-wrapper">
+          <div class="avatar"></div>
+        </div>
+        <div class="infoS">
+         <!-- <div class="info-title">Rocky</div>-->
+          <p class="info-title">
+           Cover your mouth with a cloth while coughing or sneezing. <br>Else, use your elbow to cough or sneeze. 
+          </p>
+        </div></a></div>
+  </div>
+  <div class="card2">
+    <div class="card-2 card2-object card2-object-hf"><a class="face front" href="#">
+      <img src="./assets/images/mask.jpg" height="400px" width="400px">
+        <div class="titleS">
+         <!-- <div class="title">Tommy</div>-->
+          <div class="subtitle">Use a mask when outdoors</div>
+        </div></a><a class="face back" href="#">
+        <div class="img-wrapper">
+          <div class="avatar"></div>
+        </div>
+        <div class="infoS">
+          <!--<div class="info-title">Tommy</div>-->
+          <p class="info-title">
+           Use a mask if :
+           <ul>
+             <li>you have symptoms of covid-19</li>
+             <li>you are close to a patient</li>
+             <li>if you are going outdoors.</li>
+           </ul> 
+           </p>
+        </div></a></div>
+  </div>
+  <div class="card2">
+    <div class="card-3 card2-object card2-object-hf"><a class="face front" href="#">
+      <img src="./assets/images/wash.jpg" height="400px" width="400px">
+        <div class="titleS">
+         <!-- <div class="title">Bruno</div>-->
+          <div class="subtitle">Wash hands regularly</div>
+        </div></a><a class="face back" href="#">
+        <div class="img-wrapper">
+          <div class="avatar"></div>
+        </div>
+        <div class="infoS">
+         <!-- <div class="info-title">Bruno</div>-->
+         <p class="info-title">
+          Cover your mouth with a cloth while coughing or sneezing. <br>Else, use your elbow to cough or sneeze. 
+         </p>
+        </div></a></div>
+      </div>
+</div>
+<div class="container2">
+        <div class="card2">
+          <div class="card-4 card2-object card2-object-hf"><a class="face front" href="#">
+            <img src="./assets/images/pet.jpg" height="400px" width="400px">
+              <div class="titleS">
+               <!-- <div class="title">Bruno</div>-->
+                <div class="subtitle">Avoid contact with animals</div>
+              </div></a><a class="face back" href="#">
+              <div class="img-wrapper">
+                <div class="avatar"></div>
+              </div>
+              <div class="infoS">
+               <!-- <div class="info-title">Bruno</div>-->
+               <p class="info-title">
+                Cover your mouth with a cloth while coughing or sneezing. <br>Else, use your elbow to cough or sneeze. 
+               </p>
+              </div></a></div>
+  </div>
+  <div class="card2">
+    <div class="card-5 card2-object card2-object-hf"><a class="face front" href="#">
+      <img src="./assets/images/social.jpg" height="400px" width="400px">
+        <div class="titleS">
+         <!-- <div class="title">Bruno</div>-->
+          <div class="subtitle">Dont socialise</div>
+        </div></a><a class="face back" href="#">
+        <div class="img-wrapper">
+          <div class="avatar"></div>
+        </div>
+        <div class="infoS">
+         <!-- <div class="info-title">Bruno</div>-->
+         <p class="info-title">
+          Cover your mouth with a cloth while coughing or sneezing. <br>Else, use your elbow to cough or sneeze. 
+         </p>
+        </div></a></div>
+</div>
+<div class="card2">
+  <div class="card-6 card2-object card2-object-hf"><a class="face front" href="#">
+    <img src="./assets/images/face.jpg" height="400px" width="400px">
+      <div class="titleS">
+       <!-- <div class="title">Bruno</div>-->
+        <div class="subtitle">Dont touch your face with dirty hands</div>
+      </div></a><a class="face back" href="#">
+      <div class="img-wrapper">
+        <div class="avatar"></div>
+      </div>
+      <div class="infoS">
+       <!-- <div class="info-title">Bruno</div>-->
+       <p class="info-title">
+        Cover your mouth with a cloth while coughing or sneezing. <br>Else, use your elbow to cough or sneeze. 
+       </p>
+      </div></a></div>
+</div>
+</div>
+<!--end of guidelines-->
+    </div>
     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">contact</div>
   </div>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'>
       </script><script  src="./assets/function.js"></script>
-      
+      <script src="./assets/js/bootstrap.min.js"></script>
+      <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+      <script src="./assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.js"></script>
+      <script type="text/javascript" src="function.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

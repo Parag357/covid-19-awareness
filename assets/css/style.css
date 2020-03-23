@@ -583,6 +583,14 @@ thead {
 #help_head{
   font-family: 'Righteous', cursive;
 }
+.list-group-item{
+  border-radius: 50px;
+  border-style: dotted;
+  border-collapse: collapse;
+  border-color: rgb(32, 39, 51);
+  border-width: 5px;
+  height: 80px;
+}
 /*td{
   text-align: center ;
 }

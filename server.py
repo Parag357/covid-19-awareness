@@ -36,42 +36,5 @@ def index():
 
 @app.errorhandler(404) 
 def not_found(e): 
-	return """	
-<html> 
-<head> 
-<title>Page Not Found</title> 
-</head> 
-  
-	<style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-        body {
-            display: table;
-        }
-        .centered-text {
-            text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-        }
-        </style>
-	<body style="background:#000000" onload="redirect()">
-
-  <div class="centered-text">
-  <font color="#00ff00">
-  <h4><p id="pageInfo"></p><h4>
-  <h1>Oops! Looks like you came the wrong way !!!</h1><br>
-  <h3>
-  <a href="/">Click Here</a> To go to the Home Page
-  </h3>
-  <h4>
-  <a href="/readme">Click Here</a> To go to the README Page
-  </h4>
-  </font></div>
-</html> 
-
-"""	
+	return render_template('404.html')
 app.run(debug=True)

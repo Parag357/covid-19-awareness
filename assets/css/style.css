@@ -32,15 +32,6 @@
     position: absolute;
     top: -2.75em;
   }/*
-.thumbnail {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    border: 5px solid white;
-    padding: 0.6rem;
-    margin: 0.4rem;
-    background-color: #1A1F2B;
-  }
 
   .lightbox {
       display: none;
@@ -111,6 +102,15 @@
 footer {
   font-family: 'Righteous', cursive;
 }*/
+.thumbnail {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 5px solid #1A1F2B;
+  padding: 0.0rem;
+  margin: 0.4rem;
+  background-color: #fff;
+}
 .card{
   border-radius: 100px;
   border-width: 10px;

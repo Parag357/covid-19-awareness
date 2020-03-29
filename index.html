@@ -20,16 +20,22 @@
       </style>
     <title>COVID-19 Awareness</title>
   </head>
-  <body>
+  <body class="bg">
 
     <!--navbar-->
-    <nav class="navbar-expand-sm bg-dark">
-        <div class="collapse navbar-collapse nav  nav-tabs justify-content-center" id="nav-tab" role="tablist">
-          <button class="btn-dark nav-item nav-link" id="nav-synptom-tab" data-toggle="tab" href="#nav-symptom" role="tab" aria-controls="nav-symptom" aria-selected="true">Symptoms</button>
-          <button class="btn-dark nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">MythBusters</button>
-          <button class="btn-dark nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Guidelines</button>
-          <button class="btn-dark nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Helpline</button>
-          <button class="btn-dark nav-item nav-link" id="nav-news-tab" data-toggle="tab" href="#nav-news" role="tab" aria-controls="nav-news" aria-selected="false">Newsfeed</button>
+    <nav class="navbar-expand-sm bg-danger">
+      <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="nav nav-tabs justify-content-center " id="nav-tab" role="tablist">
+          <button class="btn nav-item nav-link" id="nav-spread-tab" data-toggle="tab" href="#nav-spread" role="tab" aria-controls="nav-spread" aria-selected="false" style="font-family: Righteous, cursive; font-size: 20px;">Outbreak</button>
+          <button class="btn nav-item nav-link" id="nav-synptom-tab" data-toggle="tab" href="#nav-symptom" role="tab" aria-controls="nav-symptom" aria-selected="true"style="font-family: Righteous, cursive; font-size: 20px;">Symptoms</button>
+          <button class="btn nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"style="font-family: Righteous, cursive; font-size: 20px;">MythBusters</button>
+          <button class="btn nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">Prevention</button>
+          <button class="btn nav-item nav-link" id="nav-stats-tab" data-toggle="tab" href="#nav-stats" role="tab" aria-controls="nav-stats" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">Heat Map</button>
+          <button class="btn nav-item nav-link" id="nav-news-tab" data-toggle="tab" href="#nav-news" role="tab" aria-controls="nav-news" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">Newsfeed</button>
+          <button class="btn nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">Helpline</button>
+          <button class="btn nav-item nav-link" id="nav-sick-tab" data-toggle="tab" href="#nav-sick" role="tab" aria-controls="nav-sick" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">If I'm Sick</button>
         </div>
       </nav>
       <div class="tab-content" id="nav-tabContent">
@@ -38,41 +44,42 @@
 <br>
 <div class="container">
   <div class="jumbotreon sm-12 bg dark">
-    <p><h1 align="center">Frequently asked question about COVID-19</h1></p>
+    <p><h1 align="center" min-width="40px">Frequently asked question about COVID-19</h1></p>
   </div>
 </div>
 <br>
-     <div class="container">
+   <div class="jumbotron sm-12 bg-transparent">
       <div class="accordion" id="accordionExample">
        <div class="row">
-         <div class="col-sm-6">
+        <div class="col sm-1"></div>
+         <div class="col-sm-5">
   <div class="card">
     <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <h1 class="mb-0">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"style="font-size:1vw;">
           How deadly is Coronavirus ?
         </button>
-      </h2>
+      </h1>
     </div>
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-       Coronavirus has <b>high Infectivity</b>
-       <img src="./assets/images/up.svg.png" height="40px" width="40px">
-        but <b>low Mortality.</b>
+      <div class="card-body"style="font-size:1vw;">
+       <span class="ex1">Coronavirus has <b>high Infectivity</b>
+       <img src="./assets/images/up.svg.png" height="40px" width="40px" >
+        but <b>low Mortality.</b></span>
         <img src="./assets/images/down.svg.png" height="40px" width="40px"><br>
       </div>
     </div>
   </div>
   <div class="card">
     <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"style="font-size:1vw;">
           Will i die if i catch the disease ?
         </button>
-      </h2>
+      </h1>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body"style="font-size:1vw;">
         <center><img src="./assets/images/no.jpg" height="80px" width="80px"></center><br>
       <b> No</b>, almost <b>80% of people</b> have mild symptoms and <b>recover within two weeks.</b> It can be treated with timely medical care.
       </div>
@@ -80,14 +87,14 @@
   </div>
   <div class="card">
     <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"style="font-size:1vw;">
           Who is getting sick ?
         </button>
-      </h2>
+      </h1>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body"style="font-size:1vw;">
         <center><img src="./assets/images/old.svg" height="120px" width="80px"></center><br>
        <b>Old people</b> are<b> twice as likely</b> to have serious covid-19 illness than young people.
       </div>
@@ -95,15 +102,15 @@
   </div>
   <div class="card">
     <div class="card-header" id="headingSeven">
-      <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"style="font-size:1vw;">
          Can eating garlic prevent this infection ?
         </button>
-      </h2>
+      </h1>
     </div>
 
     <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body"style="font-size:1vw;">
         <center><img src="./assets/images/no.jpg" height="80px" width="80px"></center><br>
        There is <b>no</b> scientific evidence as such till date.
       </div>
@@ -111,14 +118,14 @@
   </div>
   <div class="card">
     <div class="card-header" id="headingEight">
-      <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"style="font-size:1vw;">
          Will warm weather stop the outbreak of covid-19?
         </button>
-      </h2>
+      </h1>
     </div>
     <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body"style="font-size:1vw;">
         <center><img src="./assets/images/yes.jpg" height="80px" width="80px"></center><br>
       <b>Yes</b>, as per the experts, heat and warm weather is likely to decrease the spread of covid-19.
       </div>
@@ -126,14 +133,14 @@
   </div>
   <div class="card">
     <div class="card-header" id="headingNine">
-      <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"style="font-size:1vw;">
           How long can thge virus survive over the surfaces ? 
         </button>
-      </h2>
+      </h1>
     </div>
     <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body"style="font-size:1vw;">
        It can survive upto   <img src="./assets/images/8.png" height="70px" width="70px">
         <img src="./assets/images/hyphen.png" height="80px" width="80px">
         <img src="./assets/images/10.png" height="80px" width="80px"> 
@@ -142,19 +149,48 @@
       </div>
     </div>
   </div>
+  <div class="card">
+    <div class="card-header" id="headingThirteen">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen"style="font-size:1vw;">
+          Does Taking a hot bath prevent the new coronavirus disease?
+        </button>
+      </h1>
+    </div>
+    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+      <div class="card-body"style="font-size:1vw;">
+        <center><img src="./assets/images/no.jpg" height="80px" width="80px"></center><br>
+      <b>No</b>, your normal body temperature remains around 36.5°C to 37°C, regardless of the temperature of your bath or shower. 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFourteen">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen"style="font-size:1vw;">
+          Can the coronavirus be transmitted through mosquito bites?
+        </button>
+      </h1>
+    </div>
+    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+      <div class="card-body"style="font-size:1vw;">
+        <center><img src="./assets/images/no.jpg" height="80px" width="80px"></center><br>
+      <b>No</b>, to date there has been no information nor evidence to suggest that the new coronavirus could be transmitted by mosquitoes.
+      </div>
+    </div>
+  </div>
 </div>
-
-  <div class="col-sm-6"> 
+  <div class="col-sm-5"> 
   <div class="card">
     <div class="card-header" id="headingFour">
-      <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"style="font-size:1vw;">
          Can the Coronavirus be passed through food ?
         </button>
-      </h2>
+      </h1>
     </div>
     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body"style="font-size:1vw;">
         <center><img src="./assets/images/no.jpg" height="80px" width="80px"></center><br>
       <b> No</b>, there is no such evidence like that and from past experience from similar viruses like SARS and MERS, it is suggested that people do not get infected by food.
       </div>
@@ -162,14 +198,14 @@
   </div>
   <div class="card">
     <div class="card-header" id="headingFive">
-      <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"style="font-size:1vw;">
           Can eating chicken or eggs cause Coronavirus ?
         </button>
-      </h2>
+      </h1>
     </div>
     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body"style="font-size:1vw;">
         <center><img src="./assets/images/no.jpg" height="80px" width="80px"></center><br>
       <b>No</b>, there is no evidence as such.Generally the virus cant survive at high temperature.<b> Chicken or egg is prepared through cooking at high enough temperature for this virus to die.</b>
       </div>
@@ -177,14 +213,14 @@
   </div>
   <div class="card">
     <div class="card-header" id="headingSix">
-      <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"style="font-size:1vw;">
          What type of mask should I wear to protect aganst Coronavirus ?
         </button>
-      </h2>
+      </h1>
     </div>
     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body"style="font-size:1vw;">
         <center><img src="./assets/images/mask.png" height="80px" width="120px"></center><br>
       <b>Any 3-layered surgical disposable mask</b> is good enought to contain the virus. <b>N-95 or N-99 masks are not mandatory</b>.
       </div>
@@ -192,14 +228,14 @@
   </div>
   <div class="card">
     <div class="card-header" id="headingTen">
-      <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen"style="font-size:1vw;">
          Should the spread of this virus concern our pets or other animals ?
         </button>
-      </h2>
+      </h1>
     </div>
     <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body"style="font-size:1vw;">
         <center><img src="./assets/images/yes.jpg" height="80px" width="80px"></center><br>
       <b>Yes</b>, specially the wild animals get easily infected. It is recommended to wash hands before and after interaction with an animal. 
       </div>
@@ -207,14 +243,14 @@
   </div>
   <div class="card">
     <div class="card-header" id="headingEleven">
-      <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven"style="font-size:1vw;">
           Are hand-dryers effective in killing the covid-19?
         </button>
-      </h2>
+      </h1>
     </div>
     <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body"style="font-size:1vw;">
         <center><img src="./assets/images/no.jpg" height="80px" width="80px"></center><br>
       <b> No</b>. Hand dryers are not effective in killing COVID-19. 
       </div>
@@ -222,65 +258,96 @@
   </div>
   <div class="card">
     <div class="card-header" id="headingTwelve">
-      <h2 class="mb-0">
-        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve"style="font-size:1vw;">
          Can a person infected with this virus recover completely ? 
         </button>
-      </h2>
+      </h1>
     </div>
     <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body"style="font-size:1vw;">
         <center><img src="./assets/images/yes.jpg" height="80px" width="80px"></center><br>
       <b>Yes</b>, about <b>80% </b>of the patients have <b>recovered without needing special treatment.</b>
       </div>
     </div>
   </div>
+  <div class="card">
+    <div class="card-header" id="headingFifteen">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen"style="font-size:1vw;">
+          Can an ultraviolet disinfection lamp kill the new coronavirus?
+        </button>
+      </h1>
+    </div>
+    <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordionExample">
+      <div class="card-body"style="font-size:1vw;">
+        <center><img src="./assets/images/no.jpg" height="80px" width="80px"></center><br>
+      <b>No</b>, UV lamps should not be used to sterilize hands or other areas of skin as<b> UV radiation can cause skin irritation.</b>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingSixteen">
+      <h1 class="mb-0">
+        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen"style="font-size:1vw;">
+          Do vaccines against pneumonia protect us from this virus?
+        </button>
+      </h1>
+    </div>
+    <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionExample">
+      <div class="card-body"style="font-size:1vw;">
+        <center><img src="./assets/images/no.jpg" height="80px" width="80px"></center><br>
+      <b>No</b>, vaccines against pneumonia, such as<b> pneumococcal vaccine</b> and <b>Haemophilus influenza type B (Hib) vaccine, do not provide protection</b> against the new coronavirus.
+      </div>
+    </div>
+  </div>
 </div>
+<div class="col sm-1"></div>
 </div>
-    </div></div>
+</div></div>
   </div>
     <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
       <!--guidelines-->
       <br>
       <div class="container">
         <div class="jumbotreon sm-12 bg dark">
-          <p><h1 align="center">Guidelines to safety from covid19 pandemic</h1></p>
+          <p><h1 align="center">Guidelines for prevention from covid-19</h1></p>
         </div>
       </div>
       <br>
 <div class="container2">
   <div class="card2">
     <div class="card-1 card2-object card2-object-hf"><a class="face front" href="#">
-      <img src="./assets/images/cough.jpg" height="400px" width="400px">
+      <img src="./assets/images/cough.jpg" height="500px" width="500px" style="border-radius: 100px;" class="responsive">
         <div class="titleS">
           <!--<div class="title">Rocky</div>-->
-          <div class="subtitle">Cover mouth while coughing</div>
+          <div class="card11 subtitle">Cover mouth while coughing</div>
         </div></a><a class="face back" href="#">
         <div class="img-wrapper">
           <div class="avatar"></div>
         </div>
         <div class="infoS">
          <!-- <div class="info-title">Rocky</div>-->
-          <p class="info-title">
-           Cover your mouth with a cloth while coughing or sneezing. <br>Else, use your elbow to cough or sneeze. 
+          <p class="info-title"style="font-size:1.5vw;">
+           Cover your mouth with a cloth while coughing or sneezing. <br>Else, use your elbow to cough or sneeze.
           </p>
         </div></a></div>
   </div>
   <div class="card2">
     <div class="card-2 card2-object card2-object-hf"><a class="face front" href="#">
-      <img src="./assets/images/mask.jpg" height="400px" width="400px">
+      <img src="./assets/images/mask.jpg" height="500px" width="500px"  style="border-radius: 100px;" class="responsive">
         <div class="titleS">
          <!-- <div class="title">Tommy</div>-->
-          <div class="subtitle">Use a mask when outdoors</div>
+          <div class="card11 subtitle">Use a mask when outdoors</div>
         </div></a><a class="face back" href="#">
         <div class="img-wrapper">
           <div class="avatar"></div>
         </div>
         <div class="infoS">
           <!--<div class="info-title">Tommy</div>-->
-          <p class="info-title">
-           Use a 3-layered surgical disposable mask if :
-           <ul>
+          <p class="info-title"style="font-size:1.5vw;">
+           Use a 3-layered mask if :
+           <ul style="font-size:1vw;">
              <li>you are coughing, sneezing or have fever.</li>
              <li>you are close to a patient</li>
              <li>you are going outdoors.</li>
@@ -291,20 +358,20 @@
   </div>
   <div class="card2">
     <div class="card-3 card2-object card2-object-hf"><a class="face front" href="#">
-      <img src="./assets/images/wash.jpg" height="400px" width="400px">
+      <img src="./assets/images/wash.jpg" height="500px" width="500px"  style="border-radius: 100px;" class="responsive">
         <div class="titleS">
          <!-- <div class="title">Bruno</div>-->
-          <div class="subtitle">Wash hands regularly</div>
+          <div class="card11 subtitle">Wash hands regularly</div>
         </div></a><a class="face back" href="#">
         <div class="img-wrapper">
           <div class="avatar"></div>
         </div>
         <div class="infoS">
          <!-- <div class="info-title">Bruno</div>-->
-         <p class="info-title">
+         <p class="info-title"style="font-size:1.5vw;">
           Try to use hand gloves.<br>
           Wash your hands after :
-          <ul>
+          <ul style="font-size:1vw;">
           <li>coughing or sneezing.</li>
              <li>eating.</li>
              <li>coming home from outside.</li>
@@ -317,51 +384,51 @@
 <div class="container2">
         <div class="card2">
           <div class="card-4 card2-object card2-object-hf"><a class="face front" href="#">
-            <img src="./assets/images/pet.jpg" height="400px" width="400px">
+            <img src="./assets/images/pet.jpg" height="500px" width="500px"  style="border-radius: 100px;" class="responsive">
               <div class="titleS">
                <!-- <div class="title">Bruno</div>-->
-                <div class="subtitle">Avoid contact with animals</div>
+                <div class="card11 subtitle">Avoid contact with animals</div>
               </div></a><a class="face back" href="#">
               <div class="img-wrapper">
                 <div class="avatar"></div>
               </div>
               <div class="infoS">
                <!-- <div class="info-title">Bruno</div>-->
-               <p class="info-title">
+               <p class="info-title" style="font-size:1.5vw;">
                 Some coronaviruses that infect animals have become able to infect humans and then spread between people.
                </p>
               </div></a></div>
   </div>
   <div class="card2">
     <div class="card-5 card2-object card2-object-hf"><a class="face front" href="#">
-      <img src="./assets/images/social.jpg" height="400px" width="400px">
+      <img src="./assets/images/social.jpg" height="500px" width="500px"  style="border-radius: 100px;"class="responsive"> 
         <div class="titleS">
          <!-- <div class="title">Bruno</div>-->
-          <div class="subtitle">Dont socialise</div>
+          <div class="card11 subtitle">Dont socialise</div>
         </div></a><a class="face back" href="#">
         <div class="img-wrapper">
           <div class="avatar"></div>
         </div>
         <div class="infoS">
          <!-- <div class="info-title">Bruno</div>-->
-         <p class="info-title">
+         <p class="info-title"style="font-size:1.5vw;">
           Avoid interaction with other people. <br> Try to maintain at least 1 metre distance from other people. <br> Try to lead an isolated routine as far as possible.
          </p>
         </div></a></div>
 </div>
 <div class="card2">
   <div class="card-6 card2-object card2-object-hf"><a class="face front" href="#">
-    <img src="./assets/images/face.jpg" height="400px" width="400px">
+    <img src="./assets/images/face.jpg" height="500px" width="500px"  style="border-radius: 100px;"class="responsive">
       <div class="titleS">
        <!-- <div class="title">Bruno</div>-->
-        <div class="subtitle">Dont touch your face with dirty hands</div>
+        <div class="card11 subtitle">Dont touch your face with dirty hands</div>
       </div></a><a class="face back" href="#">
       <div class="img-wrapper">
         <div class="avatar"></div>
       </div>
       <div class="infoS">
        <!-- <div class="info-title">Bruno</div>-->
-       <p class="info-title">
+       <p class="info-title" style="font-size:1.5vw;">
         The virus can live on metal and plastic for days, so simply adjusting your eyeglasses with unwashed hands may be enough to infect yourself.
        </p>
       </div></a></div>
@@ -372,15 +439,15 @@
     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
       <!--helpline code-->
       <br>
-        <div class="jumbotron lg-12 bg-dark" id="central">
+        <div class="jumbotron lg-12" id="central" style="background-color: #e9ecef;">
           <h1 id="imp">Central Helpline Number for corona-virus: +91-11-23978046, Toll Free no: 1075</h1>
         </div>
       <div class="container" align="center">
-        <table class="table-info table">
+        <table class="table-info table bg-transparent" style="font: 20px;">
           <thead>
             <tr>
-              <td><h4  id="help_head">Helpline Numbers for all the states and UT's of India</h4></td>
-              <td><input type="search" class="light-table-filter" data-table="table-info" placeholder="Filter/Search"id="help_head"></td>
+              <th><h4  id="help_head">Helpline Numbers for all the states and UT's of India</h4></th>
+              <th><input type="search" class="light-table-filter" data-table="table-info" placeholder="Search"id="help_head"></th>
             </tr>
           </thead>
           <thead>
@@ -554,131 +621,291 @@
         <div class="jumbotron md-12 bg-transparent">
       <ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span class="badge badge-dark badge-pill">
+          <span class="badge badge-danger badge-pill">
             <ul class="list-group">
               <li>date</li>
               <li>time</li>
             </ul>
           </span>
-          <div class="container">
+          <div class="card9">
               news item 1
               </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span class="badge badge-dark badge-pill">
+          <span class="badge badge-danger badge-pill">
             <ul class="list-group">
               <li>date</li>
               <li>time</li>
             </ul>
           </span>
-          <div class="container">
+          <div class="card9">
           news item 2
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span class="badge badge-dark badge-pill">
+          <span class="badge badge-danger badge-pill">
             <ul class="list-group">
               <li>date</li>
               <li>time</li>
             </ul>
           </span>
-          <div class="container">
+          <div class="card9">
           news item 3
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span class="badge badge-dark badge-pill">
+          <span class="badge badge-danger badge-pill">
             <ul class="list-group">
               <li>date</li>
               <li>time</li>
             </ul>
           </span>
-          <div class="container">
+          <div class="card9">
           news item 4
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span class="badge badge-dark badge-pill">
+          <span class="badge badge-danger badge-pill">
             <ul class="list-group">
               <li>date</li>
               <li>time</li>
             </ul>
           </span>
-          <div class="container">
+          <div class="card9">
           news item 5
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span class="badge badge-dark badge-pill">
+          <span class="badge badge-danger badge-pill">
             <ul class="list-group">
               <li>date</li>
               <li>time</li>
             </ul>
           </span>
-          <div class="container">
+          <div class="card9">
          news item 6
          </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span class="badge badge-dark badge-pill">
+          <span class="badge badge-danger badge-pill">
             <ul class="list-group">
               <li>date</li>
               <li>time</li>
             </ul>
           </span>
-          <div class="container">
+          <div class="card9">
         news item 7
         </div>
         </li>
       </ul>
     </div></div></div>
     <div class="tab-pane fade" id="nav-symptom" role="tabpanel" aria-labelledby="nav-symptom-tab">
-       <div class="jumbotron bg-transparent lg-12">
-        <div class="row">
-          <div class="col lg-6" align="center">
-           <div class="card3 ">
-             high fever <br>
-             <img src="./assets/images/fever.svg" height="200px" width="200px" class="thumbnail">
-          </div></div></div>
-          <div class="row">
-            <div class="col lg-6" align="center">
-             <div class="card3 ">
-               chest pain<img src="./assets/images/chestpain.svg" height="200px" width="200px" class="thumbnail">
-            </div></div>
-            <div class="col lg-6" align="center">
-             <div class="card3">
-               <img src="./assets/images/breath.webp" height="200px" width="200px" class="thumbnail">trouble in breathing
-            </div>
-            </div>
-          </div><br>
-          <div class="row">
-            <div class="col lg-12" align="center">
-              <h1 class="display-4 " align="ceneter"> Symptoms of COVID - 19</h1>
-            </div></div><br>
+      <div class="container">
+       <div class="jumbotron bg-transparent lg-12" id="jsymptom" style="margin-bottom: 16 px; padding-bottom: 16 px;">
+              <h1 class="display-5" align="center"> Symptoms of COVID-19</h1>
+            <br>
+              <div class="row">
+                <div class="col lg-4" align="center">
+                 <div class="card3 ">
+                  <img src="./assets/images/chestpain.svg" height="200px" width="200px" class="thumbnail">
+                  <br><h3>chest pain</h3>
+                </div></div>
+                <div class="col lg-4" align="center">
+                 <div class="card3">
+                   <img src="./assets/images/breath.webp" height="200px" width="200px" class="thumbnail">
+                   <br><h3>breathing problem</h3>
+                </div>
+                </div>
+                <div class="col lg-4" align="center">
+                  <div class="card3 ">
+                    <img src="./assets/images/fever.png" height="200px" width="200px" class="thumbnail">
+                    <br><h3>high fever</h3> 
+                 </div></div>
+              </div><br>
          <div class="row">
            <div class="col lg-6" align="center">
             <div class="card3 ">
-             dry cough <img src="./assets/images/cough.svg" height="200px" width="200px" class="thumbnail">
-           </div></div>
+            <img src="./assets/images/cough.svg" height="200px" width="200px" class="thumbnail">
+          <br><h3>dry cough</h3>  
+          </div></div>
            <div class="col lg-6" align="center">
             <div class="card3">
-              <img src="./assets/images/sorethroat.webp" height="200px" width="200px" class="thumbnail">sore throat
+              <img src="./assets/images/throat.png" height="200px" width="200px" class="thumbnail">
+              <br><h3>sore throat</h3>
            </div>
+           </div>
+           <div class="col lg-4" align="center">
+            <div class="card3 ">
+              <img src="./assets/images/tired.png" height="200px" width="200px" class="thumbnail">
+              <br><h3>tiredness</h3>
+           </div></div>
+         </div>
+       </div>
+     </div></div>
+     <div class="tab-pane fade" id="nav-sick" role="tabpanel" aria-labelledby="nav-sick-tab">
+         <div class="jumbotron bg-transparent md-12" id="jsick">
+            <h1 class="display-5" align="center">Steps to prevent the spread of COVID-19 if you are sick</h1>
+          <br><br>
+          <div class="row">
+            <div class="col lg-3" align="center">
+             <div class="card-sick ">
+              Stay home
+           </div></div>
+            <div class="col lg-3" align="center">
+             <div class="card-sick">
+              Stay in touch with your doctor
+            </div>
+            </div>
+            <div class="col lg-3" align="center">
+              <div class="card-sick ">
+                Avoid public transportation
+            </div></div>
+             <div class="col lg-3" align="center">
+              <div class="card-sick">
+                Stay away from others
+             </div>
+             </div>
+          </div><br><br><br>
+          <div class="row">
+            <div class="col lg-3" align="center">
+             <div class="card-sick">
+              Avoid touching your face
+           </div></div>
+            <div class="col lg-3" align="center">
+             <div class="card-sick">
+               Wear a facemask 
+            </div>
+            </div>
+            <div class="col lg-3" align="center">
+              <div class="card-sick">
+                Cover your coughs and sneezes
+            </div></div>
+             <div class="col lg-3" align="center">
+              <div class="card-sick">
+                Clean your hands often
+             </div>
+             </div>
+          </div>
+          <br><br><br>
+          <div class="row">
+            <div class="col lg-3" align="center">
+             <div class="card-sick">
+             Wear a facemask
+           </div></div>
+            <div class="col lg-3" align="center">
+             <div class="card-sick">
+              Avoid sharing personal household items
+            </div>
+            </div>
+            <div class="col lg-3" align="center">
+              <div class="card-sick">
+                Clean all “high-touch” surfaces everyday
+            </div></div>
+             <div class="col lg-3" align="center">
+              <div class="card-sick">
+                Monitor your symptoms
+             </div>
+             </div>
+          </div>
+         </div>
+       </div>
+       <div class="tab-pane fade" id="nav-spread" role="tabpanel" aria-labelledby="nav-spread-tab">
+         <div class="container">
+          <div class="jumbotron bg-transparent md-12" id="jspread">
+            <h1 class="display-5" align="center">Ways through which the coronavirus spreads</h1><br>
+            <div class="row">
+              <div class="col md-6" align="center">
+                <div class="card-spread">
+                  <img src="./assets/images/cough.svg" height="300px" width="300px" class="thumbnail">
+                 <br> <h3>Cough or Sneeze</h3>
+                  </div>
+              </div>
+              <div class="col md-6" align="center">
+                <div class="card-spread">
+                  <img src="./assets/images/contact.png" height="300px" width="300px" class="thumbnail">
+                 <br> <h3>Personal Contact</h3>
+                  </div>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col md-6" align="center">
+                <div class="card-spread">
+                  <img src="./assets/images/object.png" height="300px" width="300px" class="thumbnail">
+                 <br> <h3>Contaminated Objects</h3>
+                </div>
+              </div>
+              <div class="col md-6" align="center">
+                <div class="card-spread">
+                  <img src="./assets/images/gathering.png" height="300px" width="300px" class="thumbnail">
+                 <br> <h3>Mass Gathering</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+       </div>
+       <div class="tab-pane fade" id="nav-stats" role="tabpanel" aria-labelledby="nav-stats-tab">
+         <div class="container">
+         <div class="jumbotron bg-transparent sm-12" style="padding: 16px; margin-bottom: 16px;">
+           <div class="row">
+             <div class="col sm-5">
+               <div class="card8" align="center" style="color: white; border-radius: 250px; border: 10px solid #fff; border-style: double; background-color: #dc3545;"><br>
+                  <h3 class="display-5"style="font-family: Righteous, cursive; color:black; ">World Stats</h3>
+                  <h3 class="display-5" style="font-family: Righteous, cursive;">Total : 567657</h3>
+                  <h3 class="display-5" style="font-family: Righteous, cursive;">New : 657</h3>
+                  <h3 class="display-5" style="font-family: Righteous, cursive;">Active : 347657</h3>
+                  <h3 class="display-5" style="font-family: Righteous, cursive;">Cured :7657</h3>
+                  <h3 class="display-5" style="font-family: Righteous, cursive;">Deaths: 4657</h3><br>
+               </div>
+             </div>
+             <div class="col-sm-2"></div>
+             <div class="col sm-5">
+              <div class="card8" align="center" style="color: white; border-radius: 250px; border: 10px solid #fff; border-style: double; background-color: #dc3545;"><br>
+                <h3 class="display-5"style="font-family: Righteous, cursive; color:black; ">India Stats</h3>
+                <h3 class="display-5" style="font-family: Righteous, cursive;">Total : 567657</h3>
+                <h3 class="display-5" style="font-family: Righteous, cursive;">New : 657</h3>
+                <h3 class="display-5" style="font-family: Righteous, cursive;">Active : 347657</h3>
+                <h3 class="display-5" style="font-family: Righteous, cursive;">Cured :7657</h3>
+                <h3 class="display-5" style="font-family: Righteous, cursive;">Deaths: 4657</h3><br>
+              </div>
+             </div>
            </div>
          </div>
-        <div class="row">
-          <div class="col lg-6" align="center">
-           <div class="card3 ">
-             <img src="./assets/images/tired.png" height="200px" width="200px" class="thumbnail"><br>
-             tiredness
-          </div></div></div>
-
+        </div>
+         <div class="jumbotron bg-transparent sm-12" style="padding: 16px;">
+         <center>map goes here</center>
+         </div>
        </div>
-     </div>
-
   </div>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'>
-      </script><script  src="./assets/function.js"></script>
+  <div class="footer">
+    <div class="container">
+      <div class="jumbotron lg-12 bg-transparent" style="margin-bottom: 0px; margin-top: 0px; padding: 4 0 0 0;">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card15" align="center">
+              <h3 class="display-5  " align="center"style="font-family: Righteous,cursive; color: #fff;">STAY HOME<br> STAY SAFE</h3>
+            </div>
+          </div>
+            <div class="col-sm-4">
+              <div class="card15" align="center">
+              <h4 class="display-5  " align="center"style="font-family: Righteous,cursive; color: #fff;">Sources :</h4>
+              <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"><img src="assets/images/who.png" width="50" height="50" alt="logo" style="margin-left: 20px; margin-right: 20px;"></a>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"><img src="assets/images/cdc.png" width="50" height="50" alt="logo"style="margin-left: 20px; margin-right: 20px;"></a>
+              <a href="https://www.mygov.in/covid-19/"><img src="assets/images/mygov.png" width="50" height="50" alt="logo"style="margin-left: 20px; margin-right: 20px;"></a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card15" align="center">
+            <h4 class="display-5  " align="center"style="font-family: Righteous,cursive; color: #fff;">Developed by:</h4>
+            <a href="https://github.com/parag357"><h5 class="display-5 "style="font-family: Righteous,cursive; color: #fff;">parag357</h5></a>
+            <a href="https://github.com/TheSpeedX"><h5 class="display-5" style="font-family: Righteous,cursive; color: #fff;">speedx</h5></a>
+            </div>
+            </div>
+            </div>
+    </div></div>
+  </div>
+  
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
       <script src="./assets/js/bootstrap.min.js"></script>
       <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
       <script src="./assets/js/popper.min.js"></script>

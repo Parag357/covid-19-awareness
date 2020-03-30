@@ -1141,10 +1141,30 @@ tr{
     <div class="tab-pane fade" id="nav-news" role="tabpanel" aria-labelledby="nav-news-tab">
       <!--newsfeed section-->
       <div class="container">
-        <div class="jumbotron md-12 bg-transparent">
-      <ul class="list-group">
-	  {{ news_article }}
-      </ul>
+        <div class="jumbotron md-12 bg-transparent" style="font-family: Righteous, cursive; font-size: 20px;">
+      <ul class="list-group"><!--remove this ul class-->
+    {{ news_article }}
+    <div class="row">
+      <div class="col-sm-2" align="right">
+        <span class="badge badge-dark badge-pill">time minutes ago</span>
+      </div>
+      <div class="col-sm-10">
+        <div class="card" style="margin-top: 10px; margin-bottom: 10px; padding-top: 5px; padding-bottom: 5px;">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea modi non quae tempora aliquid placeat maiores! 
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2" align="right">
+        <span class="badge badge-dark badge-pill">time minutes ago</span>
+      </div>
+      <div class="col-sm-10">
+        <div class="card"style="margin-top: 10px; margin-bottom: 10px; padding-top: 5px; padding-bottom: 5px;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea modi non quae tempora aliquid placeat maiores! 
+        </div>
+      </div>
+    </div>
+      </ul><!--remove it-->
     </div></div></div>
     <div class="tab-pane fade" id="nav-symptom" role="tabpanel" aria-labelledby="nav-symptom-tab">
       <div class="container">

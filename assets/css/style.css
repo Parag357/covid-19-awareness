@@ -1,123 +1,20 @@
-/*.button,
-  [class*="button-"] {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    float: left;
-    margin: 0 1em 1em 0;
-    padding: 0.5em;
-    height: 3.0em;
-    font: 300 1em/3.5em 'Righteous', cursive;
-    text-decoration: none;
-    letter-spacing: .08em;
-    color: #fff;
-    background:transparent;
-    border-radius: 2px;
-    -moz-transition: ease 0.35s all;
-    -o-transition: ease 0.35s all;
-    -webkit-transition: ease 0.35s all;
-    transition: ease 0.35s all;
-  }
-  .button:hover,
-  [class*="button-"]:hover {
-    background:transparent;
-    font-family: 'Righteous', cursive;
-  }
-  .button-hover:hover {
-    line-height: 10em;
-  }
-  .button-hover:before {
-   content: attr(data-text);
-    color: black;
-    position: absolute;
-    top: -2.75em;
-  }/*
 .thumbnail {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    border: 5px solid white;
-    padding: 0.6rem;
-    margin: 0.4rem;
-    background-color: #1A1F2B;
-  }
-
-  .lightbox {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      top: 0cm;
-      left: 0;
-      background: rgba(0,0,0,0.8);
-  }
-  .lightbox img {
-      max-width: 90%;
-      max-height: 80%;
-      margin-top: 2%;
-  }
-  .lightbox:target {
-      outline: none;
-      display: block;
-  }
-  @media (max-width:765px) {
-      .thumbnail {
-          max-width: 95%;
-      }
-      .lightbox img {
-          margin-top: 50%;
-      }
-  }*/
-    /* Style all font awesome icons 
-.fa {
-    padding: 30px;
-    font-size: 100px;
-    width: 50px;
-    text-align: center;
-    border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 5px solid #1A1F2B;
+  padding: 0.0rem;
+  margin: 0.4rem;
+  background-color: #fff;
 }
-*/
-/* Add a hover effect if you want 
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-  .fa-github{
-    background:transparent;
-    color: black;   
-  }
-  .fa-linkedin {
-    background:transparent;
-    color:black;
-  }
-  .fa-skype {
-    background: #00aff0;
-    color: white;
-  }
-  .img-profile {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    border: 6px solid #fff;
-    padding: 0.6rem;
-    margin: 0.4rem;
-    background-color: #1A1F2B;
-}
-footer {
-  font-family: 'Righteous', cursive;
-}*/
 .card{
   border-radius: 100px;
   border-width: 10px;
   border-top: 50px;
   border-bottom: 50px;
   border-collapse: collapse;
-  border-color: bg-dark;
+  border-color: #dc3545;
+  max-height: 100%;
 }
 .card-header{
   background-color: transparent;
@@ -142,7 +39,7 @@ h1{
   display: block;
   position: relative;
   margin: 0;
-  border-radius: 20px;
+  border-radius: 100px;
   width: 100%;
   height: 0;
   padding: 0 0 28%;
@@ -152,7 +49,6 @@ h1{
 }
 .card2-object {
   color: #FFF;
-  border-radius: 20px;
   display: block;
   float: left;
   position: absolute;
@@ -163,19 +59,6 @@ h1{
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
-/*.card2-object.card-1 .front {
-  background: #222 url("./assets/images/santizer.jpg") 90% 35%;
-  background-size: 115%;
-}
-
-.card2-object.card-2 .front {
-  background: #222 url(https://webdevtrick.com/wp-content/uploads/pitbull.jpg) 50% 90% no-repeat;
-  background-size: 105%;
-}
-.card2-object.card-3 .front {
-  background: #222 url(https://webdevtrick.com/wp-content/uploads/german.jpg) 80% 100% no-repeat;
-  background-size: 108%;
-}*/
 .card2-object.flip-in.card-1,
 .card2-object.flip-in.card-3 {
   -webkit-animation: flip-2-hor-top-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
@@ -235,6 +118,7 @@ h1{
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  border-radius: 100px;
 }
 .face.front::before {
   position: absolute;
@@ -248,6 +132,7 @@ h1{
   z-index: 20;
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
+  border-radius: 100px;
 }
 .face.front::after {
   position: absolute;
@@ -258,6 +143,7 @@ h1{
   border: 1px solid rgba(255, 255, 255, 0.35);
   z-index: 100;
   content: "";
+  border-radius: 100px;
 }
 .face.front .titleS {
   position: absolute;
@@ -280,6 +166,7 @@ h1{
   transition: -webkit-transform 0.28s ease;
   transition: transform 0.28s ease;
   transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+  
 }
 .face.front .titleS .title {
   position: relative;
@@ -315,7 +202,7 @@ h1{
   -webkit-transition: opacity 0.15s;
   transition: opacity 0.15s;
   color:#ffffff;
-  font-family: 'Rightous', cursive;
+  font-family: 'Righteous', cursive;
 }
 .face.front:hover::before {
   opacity: 0.9;
@@ -381,6 +268,7 @@ h1{
   left: 0;
   background: rgba(14, 6, 70, 0.6);
   opacity: 0.7;
+  border-radius: 100px;
 }
 /*.avatar {
   position: absolute;
@@ -408,13 +296,14 @@ h1{
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 4% 15% 15%;
+  padding: 4% 4% 10%;
+  border-radius: 100px;
+  background-color: #dc3545;
+  color: white;
 }
 .info-title {
   font-size: 1.5vw;
-  text-align: left;
-  padding: 0;
-  margin: 0;
+
   text-align: center;
   display: block;
   width: 100%;
@@ -526,9 +415,11 @@ h1{
 @media (max-width: 650px) {
   .container {
     display: block;
+    width: 100%;
   }
   .card {
     height: 200px;
+    font-size: 5vw;
   }
   .info-title {
     font-size: 7vw;
@@ -542,7 +433,7 @@ h1{
   .face.front .titleS .title {
     font-size: 9vw;
   }
-  .face.front .titleS .subtitle {
+  .face.front .titleS.subtitle {
     font-size: 5vw;
   }
 }
@@ -564,30 +455,40 @@ tr:nth-of-type(even) {
   background: #45484b;
   color: #fff;
 }
-thead {
-  background: #0f421a;
-  color: #fff;
+tr:nth-of-type(odd) {
+  background: #e9ecef;
+  color: #000;
+}
+th{
+  background: #dc3545;
+  color: #fff; 
+  border-radius: 30px;
+}
+td{
+  border-radius: 30px;
 }
 #central{
   border-style: double;
   border-width: 10px;
-  border-color: #fff;
+  border-color: #343a40;
   text-align: center;
   border-radius: 20px;
+  padding: 0 0 0 0;
 }
 #imp{
   font-size: 35px;
-  color: #fff;
+  color: #000;
   font-family:  'Righteous', cursive;
 }
 #help_head{
   font-family: 'Righteous', cursive;
+  border-radius: 30px;
 }
 .list-group-item{
   border-radius: 50px;
   border-style: dotted;
   border-collapse: collapse;
-  border-color: rgb(32, 39, 51);
+  border-color:#dc3545;
   border-width: 5px;
   height: 80px;
 }
@@ -597,3 +498,49 @@ thead {
 tr{
   text-align: center ;
 }*/
+#jsymptom{
+  padding-top: 32px;
+}
+#jsick{
+  padding-top: 32px;
+}
+#jspread{
+  padding-top: 32px;
+}
+#help_head{
+  font-size: 20px;
+}
+.card-sick{
+  background-color:white;
+  color: #dc3545;
+  height: 80px;
+  width:250px ;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 40px;
+  border-style: double;
+  border: 5px solid #343a40;
+  margin: 0.4rem;
+  font: 20px;
+  font-family: Righteous, cursive;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#dc3545;
+  color: #fff;
+  text-align: center;
+}
+.bg {
+  /* The image used */
+  /*background-image: url("E:/covid19/assets/images/bg.jpg");*/
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

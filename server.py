@@ -1,16 +1,19 @@
 from flask import Flask , request, render_template, Markup
 import requests
 from datetime import datetime
+from bs4 import BeautifulSoup
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder=".",static_folder='assets')
 
 @app.route('/')
 def index():
+	
+	map_svg = requests.get("http://ac41bf31.ngrok.io/india").text
+	map_svg=map_svg[map_svg.find('<body>')+6:map_svg.rfind('</body>')]
 	URL = 'https://www.google.com/search?pz=1&cf=all&ned=us&hl=en&tbm=nws&gl=us&as_q={query}&as_occt=any&as_drrb=b&as_mindate={month}%2F%{from_day}%2F{year}&as_maxdate={month}%2F{to_day}%2F{year}&authuser=0'	
 	cd = datetime.now().day
 	cm = datetime.now().month
 	response = requests.get(URL.format(query="Corona india", month=cm, from_day=cd, to_day=cd, year=20)).text
-	
 	filtered=response.split('<div class="kCrYT">')[1:]
 	news_list=[]
 	for x in range(0,len(filtered),2):
@@ -32,7 +35,27 @@ def index():
 		   </a>
         </li>"""
 	news_html="\n\n".join([news_format.format(title=news["title"],link=news["link"],time=news["time"]) for news in news_list ])
-	return render_template('index.html',news_article=Markup(news_html))
+	html_doc=requests.get('https://www.worldometers.info/coronavirus/').text
+	soup=BeautifulSoup(html_doc,'html.parser')
+	out=[]
+	ind_stats=[]
+	for trtag in soup.find_all('tr'):
+		inp=[]
+		for tdtag in trtag.find_all('td'):
+			inp.append(tdtag.text.strip())
+		if 'India' in inp:
+			ind_stats=inp
+		out.append('|'.join(inp))
+	t_case=out[-1].split('|')
+	print(t_case)
+	t_case=[t_case[1],t_case[2],t_case[6],t_case[5],t_case[3]]
+	ind_stats=[ind_stats[1],ind_stats[2],ind_stats[6],ind_stats[5],ind_stats[3]]
+	print(ind_stats)
+	hlist=["Total","New","Active","Cured","Deaths"]
+	w_html='\n'.join([ '<h3 class="display-5" style="font-family: Righteous, cursive;">'+hlist[i]+' : '+t_case[i]+' </h3>' for i in range(5)])
+	i_html='\n'.join([ '<h3 class="display-5" style="font-family: Righteous, cursive;">'+hlist[i]+' : '+ind_stats[i]+' </h3>' for i in range(5)])
+	
+	return render_template('index.html',news_article=Markup(news_html),world_stats=Markup(w_html),india_stats=Markup(i_html),map_svg=Markup(map_svg))
 
 @app.errorhandler(404) 
 def not_found(e): 

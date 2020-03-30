@@ -775,29 +775,24 @@
              <div class="col sm-5">
                <div class="card8" align="center" style="color: white; border-radius: 250px; border: 10px solid #fff; border-style: double; background-color: #dc3545;"><br>
                   <h3 class="display-5"style="font-family: Righteous, cursive; color:black; ">World Stats</h3>
-                  <h3 class="display-5" style="font-family: Righteous, cursive;">Total : 567657</h3>
-                  <h3 class="display-5" style="font-family: Righteous, cursive;">New : 657</h3>
-                  <h3 class="display-5" style="font-family: Righteous, cursive;">Active : 347657</h3>
-                  <h3 class="display-5" style="font-family: Righteous, cursive;">Cured :7657</h3>
-                  <h3 class="display-5" style="font-family: Righteous, cursive;">Deaths: 4657</h3><br>
+				  {{ world_stats }}
+				  <br>
                </div>
              </div>
              <div class="col-sm-2"></div>
              <div class="col sm-5">
               <div class="card8" align="center" style="color: white; border-radius: 250px; border: 10px solid #fff; border-style: double; background-color: #dc3545;"><br>
                 <h3 class="display-5"style="font-family: Righteous, cursive; color:black; ">India Stats</h3>
-                <h3 class="display-5" style="font-family: Righteous, cursive;">Total : 567657</h3>
-                <h3 class="display-5" style="font-family: Righteous, cursive;">New : 657</h3>
-                <h3 class="display-5" style="font-family: Righteous, cursive;">Active : 347657</h3>
-                <h3 class="display-5" style="font-family: Righteous, cursive;">Cured :7657</h3>
-                <h3 class="display-5" style="font-family: Righteous, cursive;">Deaths: 4657</h3><br>
+				{{ india_stats }}
               </div>
              </div>
            </div>
          </div>
         </div>
          <div class="jumbotron bg-transparent sm-12" style="padding: 16px;">
-         <center>map goes here</center>
+    <center>
+	{{ map_svg }}
+	</center>
          </div>
        </div>
   </div>

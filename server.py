@@ -22,18 +22,16 @@ def index():
 		time=filtered[x+1][filtered[x+1].find('<span class="r0bn4c rQMQod">')+28:filtered[x+1].find('</span>')]
 		news_list.append({"title":title,"link":link,"time":time})
 	news_format="""
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span class="badge badge-dark badge-pill">
-            <ul class="list-group">
-              <li>{time}</li>
-            </ul>
-          </span>
-		  <a href="{link}" alt="Link To Article">
-          <div class="container">
-              {title}
-              </div>
-		   </a>
-        </li>"""
+	    <div class="row">
+      <div class="col-sm-2" align="right">
+        <span class="badge badge-dark badge-pill">{time}</span>
+      </div>
+      <div class="col-sm-10">
+        <div class="card" style="margin-top: 10px; margin-bottom: 10px; padding-top: 5px; padding-bottom: 5px;">
+		<a href="{link}" alt="Link To Article">{title}</a> 
+        </div>
+      </div>
+    </div>"""
 	news_html="\n\n".join([news_format.format(title=news["title"],link=news["link"],time=news["time"]) for news in news_list ])
 	html_doc=requests.get('https://www.worldometers.info/coronavirus/').text
 	soup=BeautifulSoup(html_doc,'html.parser')

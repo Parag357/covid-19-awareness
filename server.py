@@ -7,9 +7,9 @@ app = Flask(__name__,template_folder=".",static_folder='assets')
 
 @app.route('/')
 def index():
-	
 	map_svg = requests.get("http://ac41bf31.ngrok.io/india").text
 	map_svg=map_svg[map_svg.find('<body>')+6:map_svg.rfind('</body>')]
+	# map_svg=""
 	URL = 'https://www.google.com/search?pz=1&cf=all&ned=us&hl=en&tbm=nws&gl=us&as_q={query}&as_occt=any&as_drrb=b&as_mindate={month}%2F%{from_day}%2F{year}&as_maxdate={month}%2F{to_day}%2F{year}&authuser=0'	
 	cd = datetime.now().day
 	cm = datetime.now().month
@@ -27,7 +27,7 @@ def index():
         <span class="badge badge-dark badge-pill">{time}</span>
       </div>
       <div class="col-sm-10">
-        <div class="card" style="margin-top: 10px; margin-bottom: 10px; padding-top: 5px; padding-bottom: 5px;">
+        <div class="card44 ">
 		<a href="{link}" alt="Link To Article">{title}</a> 
         </div>
       </div>

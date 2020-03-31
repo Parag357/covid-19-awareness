@@ -1,4 +1,4 @@
-  <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
      crossorigin="anonymous">
      <style>
+	 
+      @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 	 .thumbnail {
   width: 200px;
   height: 200px;
@@ -559,8 +561,21 @@ tr{
   background-repeat: no-repeat;
   background-size: cover;
 }
+a{
+    color: white;
+}
+.card44{
+    margin-top: 10px;
+     margin-bottom: 10px; 
+     padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 50px; text-align: center;
+      background-color:#dc3545;
+}
+.badge{
+    margin-top: 16px;
+}
 
-      @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
       </style>
     <title>COVID-19 Awareness</title>
   </head>
@@ -575,9 +590,9 @@ tr{
           <button class="btn nav-item nav-link" id="nav-sick-tab" data-toggle="tab" href="#nav-sick" role="tab" aria-controls="nav-sick" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">If I'm Sick</button>
           <button class="btn nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"style="font-family: Righteous, cursive; font-size: 20px;">MythBusters</button>
           <button class="btn nav-item nav-link" id="nav-synptom-tab" data-toggle="tab" href="#nav-symptom" role="tab" aria-controls="nav-symptom" aria-selected="true"style="font-family: Righteous, cursive; font-size: 20px;">Symptoms</button>
-          <button class="btn nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">Prevention</button>
-          <button class="btn nav-item nav-link" id="nav-stats-tab" data-toggle="tab" href="#nav-stats" role="tab" aria-controls="nav-stats" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">Heat Map</button>
+		  <button class="btn nav-item nav-link active" id="nav-stats-tab" data-toggle="tab" href="#nav-stats" role="tab" aria-controls="nav-stats" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">Statistics</button>
           <button class="btn nav-item nav-link" id="nav-news-tab" data-toggle="tab" href="#nav-news" role="tab" aria-controls="nav-news" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">Newsfeed</button>
+          <button class="btn nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">Prevention</button>
           <button class="btn nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"style="font-family: Righteous, cursive; font-size: 20px;">Helpline</button>
         </div>
       </nav>
@@ -829,7 +844,7 @@ tr{
 </div>
 </div></div>
   </div>
-    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
       <!--guidelines-->
       <br>
       <div class="container">
@@ -1140,9 +1155,16 @@ tr{
     </div>
     <div class="tab-pane fade" id="nav-news" role="tabpanel" aria-labelledby="nav-news-tab">
       <!--newsfeed section-->
+      <br>
+      <div class="container">
+        <p><h1 align="center" min-width="40px">Latest NEWS regarding COVID-19</h1></p>
+    </div>
+      <br>
       <div class="container">
 	  {{ news_article }}
-    </div>
+	  <br>
+	  
+    </div></div>
     <div class="tab-pane fade" id="nav-symptom" role="tabpanel" aria-labelledby="nav-symptom-tab">
       <div class="container">
        <div class="jumbotron bg-transparent lg-12" id="jsymptom" style="margin-bottom: 16 px; padding-bottom: 16 px;">
@@ -1287,14 +1309,15 @@ tr{
           </div>
          </div>
        </div>
-       <div class="tab-pane fade" id="nav-stats" role="tabpanel" aria-labelledby="nav-stats-tab">
+       <div class="tab-pane fade  show active" id="nav-stats" role="tabpanel" aria-labelledby="nav-stats-tab">
          <div class="container">
          <div class="jumbotron bg-transparent sm-12" style="padding: 16px; margin-bottom: 16px;">
            <div class="row">
              <div class="col sm-5">
                <div class="card8" align="center" style="color: white; border-radius: 250px; border: 10px solid #fff; border-style: double; background-color: #dc3545;"><br>
                   <h3 class="display-5"style="font-family: Righteous, cursive; color:black; ">World Stats</h3>
-				  {{ world_stats }}
+
+{{ world_stats }}
 				  <br>
                </div>
              </div>
@@ -1310,7 +1333,10 @@ tr{
          </div>
         </div>
          <div class="jumbotron bg-transparent sm-12" style="padding: 16px;">
-         <center>{{ map_svg }}</center>
+         <center>
+		 
+     <iframe src="http://ac41bf31.ngrok.io/india" width="100%" height="920" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</center>
          </div>
        </div>
   </div>

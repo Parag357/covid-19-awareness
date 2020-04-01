@@ -56,5 +56,5 @@ def index():
 @app.errorhandler(404) 
 def not_found(e): 
 	return render_template('404.html')
-port = int(os.environ.get('PORT', 33507))
+port = int(os.environ.get('PORT', 5000))
 app.run(port=port,debug=True)

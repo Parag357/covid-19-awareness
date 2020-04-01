@@ -34,16 +34,16 @@ def index():
 	html_doc=requests.get('https://www.worldometers.info/coronavirus/').text
 	soup=BeautifulSoup(html_doc,'html.parser')
 	out=[]
-	ind_stats=[]
+	ind_stats=None
 	for trtag in soup.find_all('tr'):
 		inp=[]
 		for tdtag in trtag.find_all('td'):
 			inp.append(tdtag.text.strip())
-		if 'India' in inp:
+		if 'India' in inp and ind_stats is None:
 			ind_stats=inp
 		out.append('|'.join(inp))
 	t_case=out[-1].split('|')
-	# print(t_case)
+	print(ind_stats)
 	t_case=[t_case[1],t_case[2],t_case[6],t_case[5],t_case[3]]
 	ind_stats=[ind_stats[1],ind_stats[2],ind_stats[6],ind_stats[5],ind_stats[3]]
 	print(ind_stats)

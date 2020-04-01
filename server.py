@@ -26,7 +26,7 @@ def index():
       </div>
       <div class="col-sm-10">
         <div class="card44 ">
-		<a href="{link}" alt="Link To Article">{title}</a> 
+		<a href="{link}" alt="Link To Article" target="_blank">{title}</a> 
         </div>
       </div>
     </div>"""

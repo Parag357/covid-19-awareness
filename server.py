@@ -57,4 +57,4 @@ def index():
 def not_found(e): 
 	return render_template('404.html')
 port = int(os.environ.get('PORT', 5000))
-app.run(port=port,debug=True)
+app.run(host='0.0.0.0',port=port,debug=True)

@@ -2,6 +2,7 @@ from flask import Flask , request, render_template, Markup
 import requests
 from datetime import datetime
 from bs4 import BeautifulSoup
+import os
 
 app = Flask(__name__,template_folder=".",static_folder='assets')
 
@@ -42,7 +43,7 @@ def index():
 			ind_stats=inp
 		out.append('|'.join(inp))
 	t_case=out[-1].split('|')
-	print(t_case)
+	# print(t_case)
 	t_case=[t_case[1],t_case[2],t_case[6],t_case[5],t_case[3]]
 	ind_stats=[ind_stats[1],ind_stats[2],ind_stats[6],ind_stats[5],ind_stats[3]]
 	print(ind_stats)
@@ -55,4 +56,5 @@ def index():
 @app.errorhandler(404) 
 def not_found(e): 
 	return render_template('404.html')
-app.run()
+port = int(os.environ.get('PORT', 33507))
+app.run(port=port,debug=True)

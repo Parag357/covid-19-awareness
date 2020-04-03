@@ -26,7 +26,7 @@ def index():
       </div>
       <div class="col-sm-10">
         <div class="card44 ">
-		<a href="{link}" alt="Link To Article" target="_blank">{title}</a> 
+		<a href="{link}" alt="Link To Article">{title}</a> 
         </div>
       </div>
     </div>"""
@@ -48,13 +48,25 @@ def index():
 	ind_stats=[ind_stats[1],ind_stats[2],ind_stats[6],ind_stats[5],ind_stats[3]]
 	print(ind_stats)
 	hlist=["Total","New","Active","Cured","Deaths"]
-	w_html='\n'.join([ '<h3 class="display-5" style="font-family: Righteous, cursive;">'+hlist[i]+' : '+t_case[i]+' </h3>' for i in range(5)])
-	i_html='\n'.join([ '<h3 class="display-5" style="font-family: Righteous, cursive;">'+hlist[i]+' : '+ind_stats[i]+' </h3>' for i in range(5)])
+	stats=[t_case,ind_stats]
+	w_html=''
+	i_html=''
+	for i in range(5):
+		for j in range(2):
+			if stats[j][i].strip()=="":
+				continue
+			else:
+				if j==0:
+					w_html+='<h3 class="display-5" style="font-family: Righteous, cursive;">'+hlist[i]+' : '+stats[0][i]+' </h3>\n'
+				else:
+					i_html+='<h3 class="display-5" style="font-family: Righteous, cursive;">'+hlist[i]+' : '+stats[1][i]+' </h3>\n'
+	# w_html='\n'.join([ '<h3 class="display-5" style="font-family: Righteous, cursive;">'+hlist[i]+' : '+t_case[i]+' </h3>' for i in range(5)])
+	# i_html='\n'.join([ '<h3 class="display-5" style="font-family: Righteous, cursive;">'+hlist[i]+' : '+ind_stats[i]+' </h3>' for i in range(5)])
 	
 	return render_template('index.html',news_article=Markup(news_html),world_stats=Markup(w_html),india_stats=Markup(i_html))
 
 @app.errorhandler(404) 
 def not_found(e): 
 	return render_template('404.html')
-port = int(os.environ.get('PORT', 5000))
-app.run(host='0.0.0.0',port=port,debug=True)
+port = int(os.environ.get('PORT', 33507))
+app.run(port=port,debug=True)

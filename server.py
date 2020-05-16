@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import os
 import json
 import pickle
-import scrap
+import updater
 app = Flask(__name__,template_folder=".",static_folder='assets')
 
 @app.route('/')
@@ -20,7 +20,7 @@ def index():
 		duration=divmod(duration,3600)[0]
 		update=duration>=6
 	if update:
-		scrap.save_data()
+		updater.save_data()
 		with open('update.save', 'wb') as update_file:
 			pickle.dump(now, update_file)
 	news_list=json.load(open("news.save","r"))['news']

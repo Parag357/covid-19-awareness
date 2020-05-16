@@ -8,7 +8,7 @@ app = Flask(__name__,template_folder=".",static_folder='assets')
 
 @app.route('/')
 def index():
-	news_list=json.load(open("news.save","r"))
+	news_list=json.load(open("news.save","r"))['news']
 	news_format="""
 	    <div class="row">
       <div class="col-sm-2" align="right">

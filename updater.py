@@ -52,6 +52,6 @@ def save_data():
 	save_india()
 	save_world()
 
-save_data()
+
 
 

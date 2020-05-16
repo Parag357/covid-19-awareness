@@ -30,11 +30,11 @@ def index():
 	
 	return render_template('index.html',news_article=Markup(news_html),world_stats=Markup(w_html),india_stats=Markup(i_html))
 
-@app.index('/india')
+@app.route('/india')
 def india():
 	return render_template('india.html')
 
-@app.index('/world')
+@app.route('/world')
 def world():
 	return render_template('world.html')
 @app.errorhandler(404) 

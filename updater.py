@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objs as go
 import scrap
-
+import requests
 API="https://d85517ae.ngrok.io"
 
 def save_news():

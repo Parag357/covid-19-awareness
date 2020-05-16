@@ -51,6 +51,7 @@ def save_data():
 	save_stats()
 	save_india()
 	save_world()
-	
+
+save_data()
 
 

@@ -30,6 +30,13 @@ def index():
 	
 	return render_template('index.html',news_article=Markup(news_html),world_stats=Markup(w_html),india_stats=Markup(i_html))
 
+@app.index('/india')
+def india():
+	return render_template('india.html')
+
+@app.index('/world')
+def world():
+	return render_template('world.html')
 @app.errorhandler(404) 
 def not_found(e): 
 	return render_template('404.html')

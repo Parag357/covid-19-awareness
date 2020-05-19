@@ -33,19 +33,22 @@ def save_world():
 	active=[]
 	death=[]
 	recover=[]
+	text=[]
 	for i in df3:
 		country.append(i['country'])
 		death.append(i['death'])
 		recover.append(i['recovered'])
 		active.append(i['cases'])
-	df2=pd.DataFrame({'COUNTRY':country,'active':active,'recover':recover,'death':death})
+		text.append("Country:"+i['country']+"<br>Active:"+str(i['cases'])+"<br>Recovered:"+str(i['recovered'])+"<br>Deaths:"+str(i['death']))
+	df2=pd.DataFrame({'COUNTRY':country,'active':active,'recover':recover,'death':death,'text':text})
 	df=pd.merge(df,df2,how='inner',on='COUNTRY')
 	fig = go.Figure()
 	data=dict(type='choropleth',locations=df['CODE'],z=df['active'],showscale=False,colorscale='redor',
-			 text=df['active'],colorbar={'title':'Country wise case distribution'})
-	layout=dict(geo=dict(showframe=False, projection={'type':'orthographic'}))
+         text=df['text'],marker=dict(line=dict(color='#2d383a',width=1)))
+	layout=dict(geo=dict(showocean=True,oceancolor='#9de093', showframe=False, projection={'type':'orthographic'}))
 	chormap=go.Figure([data],layout)
-	chormap.write_html('world.html')
+	iplot(chormap)
+	chormap.write_html('E:/covid-19-awareness/map.html')
 def save_data():
 	save_news()
 	save_stats()

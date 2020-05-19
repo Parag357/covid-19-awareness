@@ -41,7 +41,7 @@ def save_world():
 	df2=pd.DataFrame({'COUNTRY':country,'active':active,'recover':recover,'death':death})
 	df=pd.merge(df,df2,how='inner',on='COUNTRY')
 	fig = go.Figure()
-	data=dict(type='choropleth',locations=df['CODE'],z=df['active'],
+	data=dict(type='choropleth',locations=df['CODE'],z=df['active'],showscale=False,
 			 text=df['active'],colorbar={'title':'Country wise case distribution'})
 	layout=dict(title='COVID-19 outbreak',geo=dict(showframe=False, projection={'type':'orthographic'}))
 	chormap=go.Figure([data],layout)

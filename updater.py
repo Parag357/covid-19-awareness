@@ -43,7 +43,7 @@ def save_world():
 	fig = go.Figure()
 	data=dict(type='choropleth',locations=df['CODE'],z=df['active'],showscale=False,
 			 text=df['active'],colorbar={'title':'Country wise case distribution'})
-	layout=dict(title='COVID-19 outbreak',geo=dict(showframe=False, projection={'type':'orthographic'}))
+	layout=dict(geo=dict(showframe=False, projection={'type':'orthographic'}))
 	chormap=go.Figure([data],layout)
 	chormap.write_html('world.html')
 def save_data():

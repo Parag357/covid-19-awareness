@@ -47,8 +47,7 @@ def save_world():
          text=df['text'],marker=dict(line=dict(color='#2d383a',width=1)))
 	layout=dict(geo=dict(showocean=True,oceancolor='#9de093', showframe=False, projection={'type':'orthographic'}))
 	chormap=go.Figure([data],layout)
-	iplot(chormap)
-	chormap.write_html('E:/covid-19-awareness/map.html')
+	chormap.write_html('world.html')
 def save_data():
 	save_news()
 	save_stats()

@@ -1394,7 +1394,20 @@ padding: 1rem;
        </div>
        <div class="tab-pane fade  show active" id="nav-stats" role="tabpanel" aria-labelledby="nav-stats-tab">
          <div class="container-fluid">
-          <div class="jumbotron bg-transparent sm-12" style="padding: 16px; margin-bottom: 16px;">
+          <!--<div class="jumbotron bg-transparent sm-12" style="padding: 16px; margin-bottom: 16px;">-->
+            <div class="row">
+              <div class="col md-3">
+                <div class="card8" align="center" style="color: white; border-radius: 15px; border: 10px solid #fff; background-color: #dc3545;"><br>
+                  <h3 class="display-5"style="font-family: Righteous, cursive; color:black; ">India Stats</h3>
+                  {{ india_stats }}
+              </div></div>
+              <div class="col-md-9">
+                <div class="card8" align="center" style="color: white; border-radius: 15px; border: 10px solid #fff;">
+                  <iframe src="/india" width="100%" height="500" frameborder="0" style="border:0;" 
+                  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+                </div> 
+            </div>
             <div class="row">
               <div class="col md-3">
                 <div class="card8" align="center" style="color: white; border-radius: 15px; border: 10px solid #fff; background-color: #dc3545;"><br>
@@ -1408,19 +1421,6 @@ padding: 1rem;
               </div>
                 </div> 
           </div> 
-          <div class="row">
-            <div class="col md-3">
-              <div class="card8" align="center" style="color: white; border-radius: 15px; border: 10px solid #fff; background-color: #dc3545;"><br>
-                <h3 class="display-5"style="font-family: Righteous, cursive; color:black; ">India Stats</h3>
-                {{ india_stats }}
-            </div></div>
-            <div class="col-md-9">
-              <div class="card8" align="center" style="color: white; border-radius: 15px; border: 10px solid #fff;">
-                <iframe src="/india" width="100%" height="500" frameborder="0" style="border:0;" 
-                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-              </div> 
-          </div>
          </div>
          <!--<div class="container">
          <div class="jumbotron bg-transparent sm-12" style="padding: 16px; margin-bottom: 16px;">

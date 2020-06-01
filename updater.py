@@ -45,7 +45,7 @@ def save_world():
 	fig = go.Figure()
 	data=dict(type='choropleth',locations=df['CODE'],z=df['active'],showscale=False,colorscale='redor',
          text=df['text'],marker=dict(line=dict(color='#2d383a',width=1)))
-	layout=dict(geo=dict(showocean=True,oceancolor='#9de093', showframe=False, projection={'type':'orthographic'}))
+	layout=dict(geo=dict(showocean=True,oceancolor='lightblue', showframe=False, projection={'type':'orthographic'}))
 	chormap=go.Figure([data],layout)
 	chormap.write_html('world.html')
 def save_data():

@@ -7,7 +7,7 @@ import pandas as pd
 import plotly.graph_objs as go
 import scrap
 import requests
-API="https://6c4539b6d43b.ngrok.io/"
+API="http://950bede88fc9.ngrok.io/"
 
 def save_news():
 	news_list=requests.get(API+"/api/news").json()

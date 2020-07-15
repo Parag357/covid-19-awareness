@@ -22,9 +22,9 @@ steps to follow if someone is sick
 
 ![](assets/screenshots/sick.png)
 
-interactive world map visualisation
+latest statistics and visualisations
 
-![](assets/screenshots/map.png)
+![](assets/screenshots/stats.png)
 
 interactive world map visualisation
 

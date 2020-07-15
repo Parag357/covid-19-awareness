@@ -34,9 +34,9 @@ preventive measures to follow
 
 ![](assets/screenshots/prevent.png)
 
-interactive world map visualisation
+symptoms of infected person
 
-![](assets/screenshots/map.png)
+![](assets/screenshots/symptom.png)
 
 interactive world map visualisation
 

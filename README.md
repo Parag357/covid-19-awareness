@@ -38,7 +38,7 @@ symptoms of infected person
 
 ![](assets/screenshots/symptom.png)
 
-interactive world map visualisation
+ways through which this virus spreads
 
-![](assets/screenshots/map.png)
+![](assets/screenshots/spread.png)
 

@@ -26,9 +26,9 @@ latest statistics and visualisations
 
 ![](assets/screenshots/stats.png)
 
-interactive world map visualisation
+helpline numbers across India
 
-![](assets/screenshots/map.png)
+![](assets/screenshots/help.png)
 
 interactive world map visualisation
 

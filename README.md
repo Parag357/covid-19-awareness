@@ -14,9 +14,9 @@ latest news
 
 ![](assets/screenshots/news.png)
 
-interactive world map visualisation
+some common mythbusters
 
-![](assets/screenshots/map.png)
+![](assets/screenshots/myth.png)
 
 interactive world map visualisation
 

@@ -10,3 +10,35 @@ interactive world map visualisation
 
 ![](assets/screenshots/map.png)
 
+latest news
+
+![](assets/screenshots/news.png)
+
+interactive world map visualisation
+
+![](assets/screenshots/map.png)
+
+interactive world map visualisation
+
+![](assets/screenshots/map.png)
+
+interactive world map visualisation
+
+![](assets/screenshots/map.png)
+
+interactive world map visualisation
+
+![](assets/screenshots/map.png)
+
+interactive world map visualisation
+
+![](assets/screenshots/map.png)
+
+interactive world map visualisation
+
+![](assets/screenshots/map.png)
+
+interactive world map visualisation
+
+![](assets/screenshots/map.png)
+

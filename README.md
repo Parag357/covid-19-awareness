@@ -30,9 +30,9 @@ helpline numbers across India
 
 ![](assets/screenshots/help.png)
 
-interactive world map visualisation
+preventive measures to follow
 
-![](assets/screenshots/map.png)
+![](assets/screenshots/prevent.png)
 
 interactive world map visualisation
 

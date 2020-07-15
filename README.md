@@ -18,9 +18,9 @@ some common mythbusters
 
 ![](assets/screenshots/myth.png)
 
-interactive world map visualisation
+steps to follow if someone is sick
 
-![](assets/screenshots/map.png)
+![](assets/screenshots/sick.png)
 
 interactive world map visualisation
 

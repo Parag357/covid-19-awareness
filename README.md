@@ -2,7 +2,7 @@
 
 this website contains statistics, interactive visualisations, latest news, helplines and other necessary information regarding the current pandemic situation.
 
-Visit [covid-in.herokuapp.com/](http://covid-in.herokuapp.com/) or click on the icon below:
+Visit [covid-in.herokuapp.com](http://covid-in.herokuapp.com/) or click on the icon below:
 
 <a href="http://covid-in.herokuapp.com/"><img src="https://img.icons8.com/doodle/48/000000/coronavirus.png" width="50" height="50"/></a>
 

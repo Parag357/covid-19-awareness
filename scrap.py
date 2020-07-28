@@ -16,7 +16,7 @@ def scrap_data():
     html_doc=requests.get('https://en.wikipedia.org/wiki/COVID-19_pandemic_by_country_and_territory#covid19-container').text
 
     soup=BeautifulSoup(html_doc,'html.parser')
-    tag_info=soup.find_all('tbody')[3]
+    tag_info=soup.find_all('tbody')[2]
     #print(tag_info)
     tag_info=tag_info.find_all('tr')
     fdata=format(tag_info[1])

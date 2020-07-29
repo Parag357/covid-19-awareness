@@ -8,19 +8,11 @@ Visit [covid-in.herokuapp.com](http://covid-in.herokuapp.com/) or click on the i
 
 # Screenshots
 
-interactive world map visualisation
-
-![](assets/screenshots/map.png)
-
-latest news
-
 ![](assets/screenshots/news.png)
 
-some common mythbusters
 
 ![](assets/screenshots/myth.png)
 
-steps to follow if someone is sick
 
 ![](assets/screenshots/sick.png)
 
@@ -28,19 +20,20 @@ latest statistics and visualisations
 
 ![](assets/screenshots/stats.png)
 
-helpline numbers across India
 
 ![](assets/screenshots/help.png)
 
-preventive measures to follow
 
 ![](assets/screenshots/prevent.png)
 
-symptoms of infected person
 
 ![](assets/screenshots/symptom.png)
 
-ways through which this virus spreads
 
 ![](assets/screenshots/spread.png)
+
+
+interactive world map visualisation
+
+![](assets/screenshots/map.png)
 

@@ -8,6 +8,9 @@ Visit [covid-in.herokuapp.com](http://covid-in.herokuapp.com/) or click on the i
 
 # Screenshots
 
+![](assets/screenshots/stats.png)
+
+
 ![](assets/screenshots/news.png)
 
 
@@ -15,10 +18,6 @@ Visit [covid-in.herokuapp.com](http://covid-in.herokuapp.com/) or click on the i
 
 
 ![](assets/screenshots/sick.png)
-
-latest statistics and visualisations
-
-![](assets/screenshots/stats.png)
 
 
 ![](assets/screenshots/help.png)

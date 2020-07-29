@@ -32,7 +32,7 @@ Visit [covid-in.herokuapp.com](http://covid-in.herokuapp.com/) or click on the i
 ![](assets/screenshots/spread.png)
 
 
-interactive world map visualisation
+<b>interactive world map visualisation</b>
 
 ![](assets/screenshots/map.png)
 

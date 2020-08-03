@@ -46,6 +46,19 @@ def save_world():
 	data=dict(type='choropleth',locations=df['CODE'],z=df['active'],showscale=False,colorscale='redor',
          text=df['text'],marker=dict(line=dict(color='#2d383a',width=1)))
 	layout=dict(geo=dict(showocean=True,oceancolor='lightblue', showframe=False, projection={'type':'orthographic'}))
+	fig.add_annotation(
+        x=2,
+        y=5,
+        xref="x",
+        yref="y",
+        text="max=5",
+        align="right",
+        bordercolor="#c7c7c7",
+        borderwidth=2,
+        borderpad=4,
+        bgcolor="#ff7f0e",
+        opacity=0.8
+        )
 	chormap=go.Figure([data],layout)
 	chormap.write_html('world.html')
 def save_data():

@@ -34,5 +34,9 @@ Visit [covid-in.herokuapp.com](http://covid-in.herokuapp.com/) or click on the i
 
 <b>interactive world map visualisation</b>
 
-![](assets/screenshots/map.png)
+<p align="center">
+  
+<img src="./assets/screenshots/map.png" alt="map" align="center"/>
+
+</p>
 

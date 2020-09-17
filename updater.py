@@ -7,7 +7,7 @@ import pandas as pd
 import plotly.graph_objs as go
 import scrap
 import requests
-API="http://213.188.253.139:5000/"
+API="http://127.0.0.1:5000"
 
 def save_news():
 	news_list=requests.get(API+"/api/news").json()
@@ -49,6 +49,7 @@ def save_world():
 	chormap=go.Figure([data],layout)
 	chormap.write_html('world.html')
 def save_data():
+	return
 	save_news()
 	save_stats()
 	save_india()

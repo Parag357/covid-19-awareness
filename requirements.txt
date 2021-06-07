@@ -1,9 +1,6 @@
-#numpy
 pandas
-#cython
 Flask==2.0.1
 gunicorn==19.9.0
 requests==2.22.0
 beautifulsoup4==4.8.1
 plotly
-#chart-studio

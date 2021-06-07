@@ -38,13 +38,6 @@ def index():
         title=news["title"],
         link=news["link"],
         time=news["time"]) for news in news_list])
-    # total_stats=json.load(open("stats.save","r"))
-    # world_stats=total_stats['world']
-    # india_stats=total_stats['india']
-    # hlist=["Total","Active","Cured","Deaths"]
-    # w_html='\n'.join([ '<h3 class="display-5" style="font-family: Righteous, cursive;">'+key+'<br>'+str(world_stats[key])+' </h3>' for key in hlist])
-    # i_html='\n'.join([ '<h3 class="display-5" style="font-family: Righteous, cursive;">'+key+'<br>'+str(india_stats[key])+' </h3>' for key in hlist])
-
     return render_template('index.html', news_article=Markup(news_html))
 
 

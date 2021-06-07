@@ -1,60 +1,51 @@
 #!/usr/bin/env python
 # coding: utf-8
 import json
-import chart_studio.plotly as py
-import numpy as np
 import pandas as pd
 import plotly.graph_objs as go
 import scrap
 import requests
-API="http://127.0.0.1:5000"
+
 
 def save_news():
-	news_list=requests.get(API+"/api/news").json()
-	with open("news.save","w") as newsfile:
-		json.dump(news_list,newsfile)
-def save_stats():
-	total_stats={"world":dict(),"india":dict()}
-	india_stats=requests.get(API+"/api/total").json()
-	total_stats['india']={"Total":india_stats['cases'],"Active":india_stats['hospitalized'],"Cured":india_stats['cured'],"Deaths":india_stats['death']}
-	world_stats=scrap.scrap_data()['data'][0]
-	total_stats['world']={"Total":world_stats['cases'],"Active":world_stats['cases']-(world_stats['death']+world_stats['recovered']),"Cured":world_stats['recovered'],"Deaths":world_stats['death']}
-	with open("stats.save","w") as statfile:
-		json.dump(total_stats,statfile)
-def save_india():
-	india_map=requests.get(API+"/india").text
-	with open("india.html","w",encoding="utf8") as map:
-		map.write(india_map)
+    URL = "https://www.google.com/search?hl=en&tbm=nws&as_q={query}"
+    response = requests.get(URL.format(query="Corona India"))
+    filtered = response.split('<div class="kCrYT">')[1:-1]
+    data = []
+    for x in range(0, len(filtered), 2):
+        print(filtered[x])
+        link = filtered[x][filtered[x].find(
+            "https://"):filtered[x].find("&amp;")]
+        title = filtered[x].split('</div>')[0].split('<div')[1].split('>')[1]
+        time = filtered[x+1].split('class="r0bn4c rQMQod">')[1].split("<")[0]
+        data.append({"title": title, "link": link, "time": time})
+    with open("news.save", "w") as newsfile:
+        json.dump({"news": data}, newsfile)
+
+
 def save_world():
-	df=pd.read_csv('2014_world_gdp_with_codes.csv')
-	df3=pd.DataFrame.from_dict(pd.read_json('data.json'))
-	df3=df3['data']
-	country=[]
-	active=[]
-	death=[]
-	recover=[]
-	text=[]
-	for i in df3:
-		country.append(i['country'])
-		death.append(i['death'])
-		recover.append(i['recovered'])
-		active.append(i['cases'])
-		text.append("Country:"+i['country']+"<br>Active:"+str(i['cases'])+"<br>Recovered:"+str(i['recovered'])+"<br>Deaths:"+str(i['death']))
-	df2=pd.DataFrame({'COUNTRY':country,'active':active,'recover':recover,'death':death,'text':text})
-	df=pd.merge(df,df2,how='inner',on='COUNTRY')
-	fig = go.Figure()
-	data=dict(type='choropleth',locations=df['CODE'],z=df['active'],showscale=False,colorscale='redor',
-         text=df['text'],marker=dict(line=dict(color='#2d383a',width=1)))
-	layout=dict(geo=dict(showocean=True,oceancolor='lightblue', showframe=False, projection={'type':'orthographic'}))
-	chormap=go.Figure([data],layout)
-	chormap.write_html('world.html')
+    df = pd.DataFrame.from_dict(json.load(open('world_codes.json'))['data'])
+    df3 = pd.DataFrame.from_dict(json.load(open('data.json'))['data'])
+    df3['text'] = ("Country:"+df3['country']+"<br>Active:"+df3['cases'] +
+                   "<br>Recovered:"+df3['recovered'] +
+                   "<br>Deaths:"+df3['death'])
+    df = pd.merge(df, df3, how='inner', on='country')
+    data = dict(
+        type='choropleth',
+        locations=df['code'],
+        z=df['cases'],
+        showscale=False,
+        colorscale='redor',
+        text=df['text'],
+        marker=dict(line=dict(color='#2d383a', width=1)))
+    layout = dict(geo=dict(showocean=True, oceancolor='lightblue',
+                           showframe=False,
+                           projection={'type': 'orthographic'}))
+    chormap = go.Figure([data], layout)
+    chormap.write_html('world.html')
+
+
 def save_data():
-	return
-	save_news()
-	save_stats()
-	save_india()
-	save_world()
-
-
-
-
+    scrap.scrap_data()
+    save_news()
+    save_world()

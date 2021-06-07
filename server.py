@@ -1,27 +1,19 @@
 from flask import Flask, render_template, Markup
-from datetime import datetime
+from flask_apscheduler import APScheduler
 import os
 import json
-import pickle
 import updater
+
 app = Flask(__name__, template_folder=".", static_folder='assets')
+
+
+scheduler = APScheduler()
+scheduler.init_app(app)
+scheduler.start()
 
 
 @app.route('/')
 def index():
-    update = False
-    now = datetime.now()
-    if not os.path.exists('update.save'):
-        update = True
-    else:
-        prev = pickle.load(open('update.save', 'rb'))
-        duration = (now-prev).total_seconds()
-        duration = divmod(duration, 3600)[0]
-        update = duration >= 6
-    if update:
-        updater.save_data()
-        with open('update.save', 'wb') as update_file:
-            pickle.dump(now, update_file)
     news_list = json.load(open("news.save", "r"))['news']
     news_format = """
         <div class="row">
@@ -51,5 +43,10 @@ def not_found(e):
     return render_template('404.html')
 
 
+@scheduler.task('cron', id='update_data', minute='0')
+def update_data():
+    updater.save_data()
+
+
 port = int(os.environ.get('PORT', 8000))
-app.run(host='0.0.0.0', port=port, debug=True)
+app.run(host='0.0.0.0', port=port, debug=False)

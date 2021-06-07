@@ -9,11 +9,10 @@ import requests
 
 def save_news():
     URL = "https://www.google.com/search?hl=en&tbm=nws&as_q={query}"
-    response = requests.get(URL.format(query="Corona India"))
+    response = requests.get(URL.format(query="Corona India")).text
     filtered = response.split('<div class="kCrYT">')[1:-1]
     data = []
-    for x in range(0, len(filtered), 2):
-        print(filtered[x])
+    for x in range(0, len(filtered)-1, 2):
         link = filtered[x][filtered[x].find(
             "https://"):filtered[x].find("&amp;")]
         title = filtered[x].split('</div>')[0].split('<div')[1].split('>')[1]

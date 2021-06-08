@@ -11,7 +11,6 @@ scheduler = APScheduler()
 scheduler.init_app(app)
 scheduler.start()
 
-
 @app.route('/')
 def index():
     news_list = json.load(open("news.save", "r"))['news']
@@ -47,6 +46,6 @@ def not_found(e):
 def update_data():
     updater.save_data()
 
-
+updater.save_data()
 port = int(os.environ.get('PORT', 8000))
 app.run(host='0.0.0.0', port=port, debug=False)
